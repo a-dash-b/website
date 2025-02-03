@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil Bhardwaj</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        .collapsible { background-color: #eee; color: #444; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; }
+        .active, .collapsible:hover { background-color: #ccc; }
+        .content { padding: 0 18px; display: none; overflow: hidden; background-color: #f9f9f9; }
+        a { color: #0645ad; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Akhil Bhardwaj</h1>
+    <h2>Currently</h2>
+    <button class="collapsible">Founder at UNBOX <a href="http://www.akhilbhardwaj.com">(site)</a></button>
+    <div class="content">
+        <p>startup founded with my parents – we make board and card games for a living!</p>
+    </div>
+    <button class="collapsible">MBA candidate at ISB Hyderabad <a href="http://www.akhilbhardwaj.com">(incoming 2025-26) (blog)</a></button>
+    <div class="content">
+        <p>meeting great people and building a strong foundation for a career in consulting</p>
+    </div>
+
+    <h2>Formerly</h2>
+    <button class="collapsible">Short-Term Consultant at Positive Moves <a href="http://www.akhilbhardwaj.com">(2024) (blog)</a></button>
+    <div class="content">
+        <p>strategized the aerospace and defence vertical in India alongside firm’s top leadership</p>
+    </div>
+    <button class="collapsible">Associate Consultant at Capitel <a href="http://www.akhilbhardwaj.com">(2022-24) (more) (blog)</a></button>
+    <div class="content">
+        <p>advised investment committees at KKR, Blackstone, TPG and other top funds on 12+ due diligence engagements in the TMT space</p>
+        <p>formulated exit, GTM and expansion strategy for top telcos and data centre operators; created AI data centre forecast model in early 2023 used in $2B+ investments</p>
+        <p>placed on fast-track, promoted within 9 months for managing critical workstreams as Analyst</p>
+    </div>
+    <button class="collapsible">Economics + Finance at Ashoka University <a href="http://www.akhilbhardwaj.com">(2019-22) (paper)</a></button>
+    <div class="content">
+        <p>wrote journal-grade research papers, served as finance minister and discovered my love for community building</p>
+    </div>
+
+    <h2>Current Fascinations</h2>
+    <p>creating communities and memories at UNBOX <a href="http://www.akhilbhardwaj.com">(blog)</a></p>
+    <p>planes and cars!</p>
+    <p>tennis, skincare and fitness</p>
+    <p>connecting with new people</p>
+
+    <h2>Get in touch</h2>
+    <p>Instagram <a href="http://www.akhilbhardwaj.com">@akhilb09</a></p>
+    <p>Email <a href="mailto:hello@akhilbhardwaj.com">hello@akhilbhardwaj.com</a></p>
+    <p>The Overworked High Effort Last Minute Newsletter <a href="http://www.akhilbhardwaj.com">(subscribe)</a></p>
+
+    <h2>New blogs</h2>
+    <p><a href="http://www.akhilbhardwaj.com">Blog 1 (link)</a></p>
+    <p><a href="http://www.akhilbhardwaj.com">Blog 2 (link)</a></p>
+    <p><a href="http://www.akhilbhardwaj.com">Blog 3 (link)</a></p>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
